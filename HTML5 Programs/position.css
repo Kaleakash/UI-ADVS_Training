@@ -1,0 +1,38 @@
+.parent{
+    border: solid 2px tomato;
+    display: inline-block;
+}
+/*  box class increase width and height px                 */
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+/*
+.box {
+    width: 20%;
+    height: 30%;
+    display: inline-block;
+}*/
+#d1 {
+  background-color: wheat;
+}
+/* Relative : the element or tag is position relative to its normal position. */
+/* absolute : the element is position absoulte to first positioned parents or sibling tags. */
+#d3 {
+    background-color:violet;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+}
+#d4 {
+    background-color:turquoise;
+}
+#d5 {
+    background-color:blue;
+}
+#d6 {
+    background-color:brown;
+}
+

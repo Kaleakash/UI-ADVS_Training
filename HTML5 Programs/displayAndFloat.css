@@ -1,0 +1,26 @@
+.parent{
+    border: solid 2px red;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: solid 2px greenyellow;
+}
+/*  display property                */
+#one {
+    background-color: red;
+    display: inline-block;
+}
+#two {
+    background-color:seagreen;
+    display: inline-flex;
+}
+/* float property             */
+#three {
+    background-color:springgreen;
+    float: left;
+}
+#four {
+    background-color:violet;
+    float:right;
+}

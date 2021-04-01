@@ -1,0 +1,24 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: solid 2px red;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+    animation-name: myAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+@keyframes myAnim {
+ /*   to {background-color: red;}
+    from {background-color: springgreen}*/
+    0% {background-color: tomato;margin-left: 0px;}
+    25% {background-color: wheat;margin-left: 200px;}
+    50% {background-color:yellow;margin-left: 400px;}
+    75% {background-color: violet;margin-left: 600px;}
+    100% {background-color:cornflowerblue;margin-left: 800px;}
+}

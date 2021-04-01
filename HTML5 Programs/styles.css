@@ -1,0 +1,47 @@
+header{
+    background-color: cadetblue;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: solid 4px red;
+}
+nav{
+    border: solid 3px turquoise;
+    text-align: right;
+    margin-left: 1100px;
+    background-color: wheat;
+    padding: 10px;
+}
+aside{
+    border: solid 5px turquoise;
+    width: 20%;
+    height: 440px;
+    float: left;
+    border-radius: 20px;
+}
+main {
+    border: solid 5px turquoise;
+    width: 55%;
+    height: 440px;
+    display: inline;
+    float: left;
+    border-radius: 20px;
+}
+article {
+    border: solid 5px turquoise;
+    width: 20%;
+    height: 440px;
+    display: inline;
+    float: left;
+    border-radius: 20px;
+}
+footer{
+    margin-top: 480px;
+    background-color: cadetblue;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: solid 4px red;
+}
