@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classInfo{background-color: blueviolet;font-weight: bold;font-size: 20px;}
+    </style>
+    <script type="text/JavaScript">
+    function applyStyle() {
+        var divMainNode = document.getElementById("main");
+        divMainNode.setAttribute("class","classInfo");      // adding class attribute to div tag. 
+    }
+    function addData() {
+        var name = document.getElementById("name").value;
+        var pNode = document.createElement("p");    //created p tag 
+        var textNode = document.createTextNode(name); // create text data. 
+        pNode.setAttribute("style","color:red");
+        pNode.appendChild(textNode);        // addded content in p tag 
+
+        var divMainNode = document.getElementById("main");  // get the div tag reference. 
+        divMainNode.appendChild(pNode);                 // p tag added to div tag. 
+    }
+    </script>
+</head>
+<body>
+    Name :<input type="text" id="name"/>
+    <br/>
+    <input type="button" value="add data" onclick="addData()"/>
+    <input type="button" value="Apply CSS Effect" onclick="applyStyle()"/>
+    <hr/>
+    <div id="main">
+
+    </div>
+
+</body>
+</html>

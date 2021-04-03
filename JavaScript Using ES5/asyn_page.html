@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function dis() {
+            //document.write("2nd statement");
+            document.getElementById("msg").innerHTML="2nd Statement"
+        }
+        var i=0;
+        function dis1() {
+            document.getElementById("msg1").innerHTML="4th Statement "+i;
+            i++;
+        }
+        //synchronouse statement 
+        /*document.write("1st statement")
+        document.write("<br/>2nd statement")
+        document.write("<br/>3rd statement")*/
+        //Asynchronous statement 
+        document.write("1st statement")
+        setTimeout("dis()",2000);       // execute the task only once after specific time 
+        setInterval("dis1()",1000);     // it will execute again and again after specific time
+        document.write("<br/>3rd statement")
+    </script>
+</head>
+<body>
+    <div id="msg1">
+
+    </div>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
