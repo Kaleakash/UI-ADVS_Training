@@ -13,11 +13,14 @@ export class TdfLoginPageComponent implements OnInit {
   }
   checkUser(loginRef:any){
     //console.log("Event generated");
-    //console.log(loginRef)
+    console.log(loginRef)
     if(loginRef.user=="Raj" && loginRef.pass=="Kumar"){
         this.msg = "Successfully Login!"
     }else {
       this.msg = "Failure try once again";
     }
+  }
+  fun(hobbies:any) {
+    console.log("event fired"+hobbies)
   }
 }

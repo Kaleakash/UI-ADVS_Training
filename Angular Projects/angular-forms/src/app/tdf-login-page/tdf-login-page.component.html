@@ -13,6 +13,19 @@
             <span style="color:red">Password is required</span>
         </div>
         <br/>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" #gender required ngModel>male
+        <input type="radio" name="gender" value="female" #gender required ngModel>female
+        <div *ngIf="gender.oninvalid">
+               Please select the gender 
+        </div>
+        <br/>
+        <label>Hobbies</label>
+        <div>
+        <input type="checkbox"  name="hh" value="reading" #hh1 (input)="fun(hh1.value)">reading
+        <input type="checkbox" name="hh" value="playing" #hh2 (input)="fun(hh2.value)">writing
+        </div>
+        <br/>
         <input type="submit" value="submit" [disabled]="loginRef.invalid"/>
         <input type="reset" value="reset"/>
     </form>

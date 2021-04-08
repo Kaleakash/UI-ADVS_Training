@@ -1,0 +1,8 @@
+<div>
+    <div *ngFor="let cc of hobbies">
+        <input type="checkbox" [value]="cc" 
+        (change)="checkValue($event)"/>{{cc}}
+    </div>
+    <input type="button" value="click here"
+    (click)="showHobbies()"/>
+</div>
