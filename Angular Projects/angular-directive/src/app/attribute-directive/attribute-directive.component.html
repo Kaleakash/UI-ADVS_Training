@@ -1,1 +1,20 @@
-<p>attribute-directive works!</p>
+<div>
+    <h2>Attribute Diretive Example</h2>
+    <h3>Style Attribute</h3>
+    <p style="color:red">Apply CSS Effect using inline CSS</p>
+    <p style="color:red;font-size: 20px;">Apply CSS Effect using inline CSS</p>
+    <p [ngStyle]="{'color':'red'}">Apply CSS Effect using Angular ngStyle Attribute</p>
+    <p [ngStyle]="{'color':'red','font-size':'30px'}">Apply CSS Effect using Angular ngStyle Attribute</p>
+    <p [ngStyle]="styleData">Apply CSS Effect using Angular ngStyle with variable</p>
+    <h3>Class Attribute</h3>
+    <p class="fontFamily">Welcome to CSS Class seletor </p>
+    <p [ngClass]=" 'fontFamily' ">Welcome to CSS Class selector using ngClass</p>
+
+    <p class="fontFamily backgroundFamily">Welcome to CSS Class seletor </p>
+    <p [ngClass]=" {fontFamily:true,backgroundFamily:true} ">Welcome to CSS Class selector using ngClass</p>
+
+    <p [ngClass]=" {firstBackground:f1,secondBackground:f2}">
+        Change the effect using button
+    </p>
+    <input type="button" value="click" (click)="change()"/>
+</div>
