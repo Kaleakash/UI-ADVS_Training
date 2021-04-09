@@ -47,6 +47,12 @@
       "name": "Seeta",
       "salary": "21000",
       "gender": "female"
+    },
+    {
+      "id": "108",
+      "name": "Rajesh",
+      "salary": "22000",
+      "gender": "male"
     }
   ]
 }
