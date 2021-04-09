@@ -13,7 +13,7 @@ export class FirstComponent implements OnInit {
   ngOnInit(): void {
   }
   fun1() {
-    let ser1 = new MyCustomService();
+    let ser1 = new MyCustomService(); 
     this.msg1 = ser1.sayHello();
   }
 }
