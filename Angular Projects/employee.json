@@ -29,6 +29,24 @@
       "name": "Meeta",
       "salary": "16000",
       "gender": "female"
+    },
+    {
+      "id": "105",
+      "name": "Balaji",
+      "salary": "16000",
+      "gender": "male"
+    },
+    {
+      "id": "106",
+      "name": "Ramesh",
+      "salary": "18000",
+      "gender": "male"
+    },
+    {
+      "id": "107",
+      "name": "Seeta",
+      "salary": "21000",
+      "gender": "female"
     }
   ]
 }

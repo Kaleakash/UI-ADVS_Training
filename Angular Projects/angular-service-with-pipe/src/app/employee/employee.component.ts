@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../model.employee';
 import { EmployeeService } from '../service.employee';
 
 @Component({
@@ -9,13 +10,16 @@ import { EmployeeService } from '../service.employee';
 })
 export class EmployeeComponent implements OnInit {
 
+  employees?:Array<Employee>
   constructor(public empSer:EmployeeService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    // call only once
+    this.empSer.retreiveEmployee().subscribe(data=>this.employees=data);
   }
   storeRec(empRef:any){
     //console.log(empRef);
     this.empSer.storeEmployee(empRef);
+    this.empSer.retreiveEmployee().subscribe(data=>this.employees=data);
   }
 
 }
