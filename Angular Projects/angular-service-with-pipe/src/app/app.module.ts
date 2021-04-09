@@ -6,6 +6,7 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { FakeComponent } from './fake/fake.component';
 import { FakeService } from './service.fake';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { FakeService } from './service.fake';
     FakeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,HttpClientModule
   ],
   providers: [FakeService],   // register all service class details 
   bootstrap: [AppComponent]
