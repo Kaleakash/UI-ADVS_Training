@@ -11,6 +11,7 @@ import { EmployeeService } from '../service.employee';
 export class EmployeeComponent implements OnInit {
 
   employees?:Array<Employee>
+  dd:Date= new Date();
   constructor(public empSer:EmployeeService) { }
 
   ngOnInit(): void {    // call only once

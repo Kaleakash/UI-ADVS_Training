@@ -9,6 +9,7 @@ import { FakeService } from './service.fake';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeComponent } from './employee/employee.component';
 import { FormsModule } from '@angular/forms';
+import { GenderPipe } from './gender.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FormsModule } from '@angular/forms';
     FirstComponent,
     SecondComponent,
     FakeComponent,
-    EmployeeComponent
+    EmployeeComponent,GenderPipe
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule

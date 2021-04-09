@@ -13,18 +13,21 @@
         <input type="submit" value="Store Rec"/>
     </form>
     <hr/>
+    Date Details : {{dd | date :'long'}}
     <table border="1">
         <tr>
             <th>Id</th>
             <th>Name</th>
             <th>Salary</th>
             <th>Gender</th>
+            <td>employee object</td>
         </tr>
         <tr *ngFor="let emp of employees">
             <td>{{emp.id}}</td>
-            <td>{{emp.name}}</td>
-            <td>{{emp.salary}}</td>
+            <td>{{emp.name | uppercase | genderPipe : emp.gender}}</td>
+            <td>{{emp.salary | currency:'Rs'}}</td>
             <td>{{emp.gender}}</td>
+            <td>{{emp | json}}</td>
         </tr>
     </table>
 </div>
