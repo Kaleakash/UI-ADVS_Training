@@ -1,0 +1,15 @@
+<div>
+    <form #empRef="ngForm" (ngSubmit)="storeRec(empRef.value)">
+        <label>Id</label>
+        <input type="text" name="id" ngModel/><br/>
+        <label>Name</label>
+        <input type="text" name="name" ngModel/><br/>
+        <label>Salary</label>
+        <input type="text" name="salary" ngModel/><br/>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" ngModel/>Male
+        <input type="radio" name="gender" value = "female" ngModel/>FeMale
+        <br/>
+        <input type="submit" value="Store Rec"/>
+    </form>
+</div>
