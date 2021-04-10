@@ -18,12 +18,14 @@ export class LoginComponent implements OnInit {
     this.loginService.checkUser().subscribe(data=> {
         data.forEach(rec=>{
           if(rec.user==user && rec.pass==pass){
-            this.router.navigate(["success"]);
+            this.router.navigate(["success",rec.user]); // 
+            //append username through path.
           }else {
             this.errorMsg="Invalid UserName or password"; 
           }
         })
-    })
+    });
+
     /*if(user=="Raj" && pass=="123"){
       this.router.navigate(["success"]);
         //console.log("Successfully Login")
