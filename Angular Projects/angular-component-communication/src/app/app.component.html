@@ -12,6 +12,12 @@
   <input type="button" value="Add Product" (click)="addProduct(productName.value)"/>
   <br/>
   Child Age in parent component template is {{childAge}}
+  <br/>
+  <input type="button" value="Event Reference" (click)="fun($event)"/><br/>
+
+  <br/>
+  <input type="button" value="Call Child2 function" (click)="callChild2Fun()"/>
+  Child2 Desg {{childDesg}}<br/>
   <hr/>
   
   <app-child1 [pName]="parentName" (eventRef)="childAge=$event"></app-child1>
