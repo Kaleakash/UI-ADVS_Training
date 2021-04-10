@@ -20,4 +20,5 @@ export class SuccessComponent implements OnInit {
     sessionStorage.removeItem("obj1");
     this.router.navigate(["login"]);
   }
+  
 }

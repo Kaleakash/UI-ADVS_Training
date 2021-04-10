@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
         data.forEach(rec=>{
           if(rec.user==user && rec.pass==pass){
             sessionStorage.setItem("obj1",rec.user);  // sessionID or JWT
-            this.router.navigate(["success",rec.user]); // 
+            this.router.navigate(["success",rec.user]); // abc@gmail.com 
             //append username through path.
           }else {
             this.errorMsg="Invalid UserName or password"; 
