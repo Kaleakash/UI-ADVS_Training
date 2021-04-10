@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
     this.loginService.checkUser().subscribe(data=> {
         data.forEach(rec=>{
           if(rec.user==user && rec.pass==pass){
+            sessionStorage.setItem("obj1",rec.user);  // sessionID or JWT
             this.router.navigate(["success",rec.user]); // 
             //append username through path.
           }else {

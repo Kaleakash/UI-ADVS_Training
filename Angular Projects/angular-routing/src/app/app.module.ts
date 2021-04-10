@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './success/success.component';
 import {HttpClientModule} from '@angular/common/http';
+import { AuthGaurd } from './login.authgaurd';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,FormsModule,HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGaurd],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
