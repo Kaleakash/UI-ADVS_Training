@@ -1,0 +1,26 @@
+<div>
+  <h1>Component Communication</h1>
+  <h3>Parent Component</h3>
+  Name is :<input type="text" #pname/><br/>
+  <input type="button" value="click here"
+  (click)="displayName(pname.value)"/>
+  
+  <br/>
+  Name is {{parentName}}
+  <br/>
+  ProductName :<input type="text" #productName/><br/>
+  <input type="button" value="Add Product" (click)="addProduct(productName.value)"/>
+  <br/>
+  Child Age in parent component template is {{childAge}}
+  <hr/>
+  
+  <app-child1 [pName]="parentName" (eventRef)="childAge=$event"></app-child1>
+
+  <hr/>
+
+    <app-child2 [productDetails]="products"></app-child2>
+
+  <hr/>
+
+  
+</div>
