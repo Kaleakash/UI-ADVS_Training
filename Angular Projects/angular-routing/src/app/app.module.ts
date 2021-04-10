@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { LoginComponent } from './login/login.component';
-
+import { FormsModule } from '@angular/forms';
+import { SuccessComponent } from './success/success.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     AboutusComponent,
     ContactusComponent,
-    LoginComponent
+    LoginComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
